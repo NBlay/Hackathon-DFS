@@ -1,0 +1,286 @@
+:root {
+    --color1: #fba602;
+}
+
+body {
+    margin: 0;
+}
+
+/******************/
+/***** header *****/
+/******************/
+
+header {
+    position: relative;
+    height: 850px;
+}
+
+.identity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 50px;
+}
+
+.main {
+    display: block;
+    width: 362px;
+    height: 266px;
+}
+
+.identity h1 {
+    margin-top: 0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 42px;
+    color: white;
+}
+
+/* hero */
+
+.hero {
+    height: 100%;
+
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.slider-nav__left,
+.slider-nav__right {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 0;
+    border-radius: 0;
+}
+
+.slider-nav__left i,
+.slider-nav__right i {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--color1);
+    
+}
+
+.vehicule h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+}
+
+.slider-nav__left span,
+.slider-nav__right span {
+    display: block;
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.proposeTitle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
+.call-to-action-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+}
+
+.call-to-action {
+    display: block;
+    width: 200px;
+    padding: 0.5rem 2rem;
+    margin: auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: grey 0 3px 3px;
+    cursor: pointer;
+    background-color: var(--color1);
+    border: 0;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.slider-nav__left:hover,
+.slider-nav__right:hover,
+.call-to-action:hover {
+    transform: scale(1.1);
+}
+
+
+/******************/
+/*** main ******/
+/******************/
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.vehicule:nth-of-type(2) .flex p {
+    order: -1;
+}
+
+.vehicule {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.vehicule img {
+    width: auto;
+    height: 50%;
+    border-radius: 6px;
+}
+
+.vehicule h2 {
+    margin: 20px;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.propose {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 484px;
+}
+
+.iconTransport {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.elipse {
+    position: relative;
+    width: 269px;
+    height: 258px;
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
+    border: 5px solid black;
+    border-radius: 300px;
+}
+
+.elipse img {
+    right: 8px;
+    align-items: center;
+    margin: 40px;
+}
+
+.elipse p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+} 
+
+.imgsize {
+    width: 596px;
+    height: 399px;
+    
+}
+.shadow{
+    box-shadow: 10px 5px 5px black;
+}
+a {
+    text-decoration: none;
+}
+
+.imgIconTransport {
+    
+    position: absolute;
+    top: 10px;
+    width: 50%;
+    background-size: cover;
+}
+
+.imgIconVoiture {
+    width: 60%;
+}
+
+.textIcon {
+    position: relative;
+    top: 170px;
+    color: black;
+    text-align: center;
+}
+/******************/
+/*** Color-Help ******/
+/******************/
+.blue_100 {
+    background-color: #48cae4;
+}
+
+.yellow_100 {
+    background-color: #f9cc2f;
+}
+
+
+#block-vehi {
+    background-color: #32afc8;
+    font-family: Open Sans;
+    color: white;  
+}
+
+#block-bus {
+    background-color: #f7d355;  
+    font-family: Open Sans;
+    color: white;
+}
+
+.text-block {
+    width: 500px;
+    padding: 20px;
+    padding-right: 50px;
+    font-size: 28px;
+    font-weight: bold;
+    border: solid 1px #32afc8;
+    
+}
+
+/******************/
+/***** footer *****/
+/******************/
+
+footer {
+
+    color: #fff;
+    background-color: #343434;
+}
+
+.block-fin {
+ 
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgfin
+{
+    position: absolute;
+    margin-right:77px;
+}
